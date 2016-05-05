@@ -25,7 +25,7 @@ public class CustomUpdatedListActivity extends AppCompatActivity {
         setContentView(R.layout.activity_custom_updated_list);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         mCustomListWithCheckBoxActivityListView = (ListView) findViewById(R.id.customListWithCheckBoxActivityListView);
 
         ArrayAdapter<Model> dynamicAdapter = new DynamicArrayAdapter(this, getModel());

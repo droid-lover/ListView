@@ -53,8 +53,8 @@ public class DynamicArrayAdapter extends ArrayAdapter<Model> {
 
             final ViewHolder viewHolder = new ViewHolder();
 
-            viewHolder.text = (TextView) view.findViewById(R.id.label);
-            viewHolder.checkbox = (CheckBox) view.findViewById(R.id.check);
+            viewHolder.text = (TextView) view.findViewById(R.id.itemRowTextView);
+            viewHolder.checkbox = (CheckBox) view.findViewById(R.id.itemRowCheckBox);
 
             viewHolder.checkbox
                     .setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {

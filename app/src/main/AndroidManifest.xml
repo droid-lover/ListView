@@ -31,7 +31,8 @@
         <activity
             android:name=".activity.CustomUpdatedListActivity"
             android:label="@string/title_activity_custom_updated_list"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:parentActivityName=".activity.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>
