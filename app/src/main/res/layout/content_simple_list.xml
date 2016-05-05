@@ -12,7 +12,7 @@
     android:weightSum="7"
     android:background="@android:color/darker_gray"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".SimpleListActivity"
+    tools:context=".activity.SimpleListActivity"
     tools:showIn="@layout/activity_simple_list">
 
     <TextView

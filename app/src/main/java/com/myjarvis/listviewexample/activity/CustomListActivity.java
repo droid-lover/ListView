@@ -1,10 +1,13 @@
-package com.myjarvis.listviewexample;
+package com.myjarvis.listviewexample.activity;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+
+import com.myjarvis.listviewexample.adapter.CustomListAdapter;
+import com.myjarvis.listviewexample.R;
 
 import java.util.ArrayList;
 

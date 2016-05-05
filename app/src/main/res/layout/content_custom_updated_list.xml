@@ -9,11 +9,11 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".activity.CustomListActivity"
-    tools:showIn="@layout/activity_custom_list">
+    tools:context=".activity.CustomUpdatedListActivity"
+    tools:showIn="@layout/activity_custom_updated_list">
 
     <ListView
-        android:id="@+id/customListActivityListView"
+        android:id="@+id/customListWithCheckBoxActivityListView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent" />
 </RelativeLayout>

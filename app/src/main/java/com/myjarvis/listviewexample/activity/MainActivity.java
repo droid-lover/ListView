@@ -1,4 +1,4 @@
-package com.myjarvis.listviewexample;
+package com.myjarvis.listviewexample.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,10 +7,12 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.TextView;
 
+import com.myjarvis.listviewexample.R;
+
 public class MainActivity extends AppCompatActivity {
 
     Toolbar toolbar;
-    TextView mSipleListTextView, mCustomListTextView;
+    TextView mSipleListTextView, mCustomListTextView, mCustomListWithCheckBoxTextView;
 
 
     @Override
@@ -21,7 +23,9 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         initializeView();
+
         intents();
+
     }
 
     private void initializeView() {
@@ -29,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
         toolbar.setTitle("ListView Android");
         mSipleListTextView = (TextView) findViewById(R.id.mainActivitySimpleListTextView);
         mCustomListTextView = (TextView) findViewById(R.id.mainActivityCoustomListTextView);
+        mCustomListWithCheckBoxTextView = (TextView) findViewById(R.id.mainActivityCoustomListWithCheckboxTextView);
     }
 
 
@@ -39,7 +44,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, SimpleListActivity.class);
-
                 startActivity(intent);
 
             }
@@ -48,7 +52,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, CustomListActivity.class);
+                startActivity(intent);
 
+            }
+        });
+        mCustomListWithCheckBoxTextView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, CustomUpdatedListActivity.class);
                 startActivity(intent);
 
             }

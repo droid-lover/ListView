@@ -1,4 +1,4 @@
-package com.myjarvis.listviewexample;
+package com.myjarvis.listviewexample.activity;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -10,6 +10,8 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
+
+import com.myjarvis.listviewexample.R;
 
 import java.util.ArrayList;
 
@@ -43,6 +45,7 @@ public class SimpleListActivity extends AppCompatActivity {
 
             listOfDays.add(daysName[i]);
         }
+
 
         mAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, listOfDays);
 

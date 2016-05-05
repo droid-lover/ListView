@@ -1,8 +1,9 @@
 <resources>
-    <string name="app_name">ListViewExample</string>
+    <string name="app_name">jarvisLists</string>
     <string name="action_settings">Settings</string>
-    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_main">jarvisLists</string>
     <string name="simple_list">Simple List Example</string>
     <string name="custom_list">Custom List Example</string>
-    <string name="title_activity_custom_list">CustomListActivity</string>
+    <string name="title_activity_custom_list">Custom List</string>
+    <string name="title_activity_custom_updated_list">List With CheckBox</string>
 </resources>
